@@ -1,0 +1,47 @@
+{
+  "name": "vm-tmpl",
+  "version": "0.1.0",
+  "description": "violentmonkey template",
+  "keywords": [
+    "violentmonkey",
+    "template",
+    "esbuild"
+  ],
+  "author": "hz.impact",
+  "license": "MIT",
+  "main": "app.jsx",
+  "scripts": {
+    "start": "webpack serve",
+    "build:esbuild": "node build.mjs",
+    "build:webpack": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "metadata": {
+    "name": "webpack userscript",
+    "namespace": "Violentmonkey Scripts",
+    "description": "This is a userscript.",
+    "match": "*://*.baidu.com/*",
+    "grant": "GM_addStyle",
+    "version": "",
+    "author": "",
+    "require": "https://cdn.jsdelivr.net/combine/npm/@violentmonkey/dom@2,npm/@violentmonkey/ui@0.7"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "babel-loader": "^9.1.2",
+    "esbuild": "0.17.17",
+    "html-webpack-plugin": "^5.5.1",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
+  }
+}
