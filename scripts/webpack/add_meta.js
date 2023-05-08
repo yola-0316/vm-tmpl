@@ -12,7 +12,7 @@ module.exports = (pkgJson) => {
     grant: metadata.grant ?? "GM_addStyle",
     require:
       metadata.require ??
-      "https://cdn.jsdelivr.net/combine/npm/@violentmonkey/dom@2,npm/@violentmonkey/ui@0.7",
+      "https://cdn.jsdelivr.net/combine/npm/@violentmonkey/dom@2,npm/@violentmonkey/ui@0.7,npm/react@18.2.0,npm/react-dom@18.2.0",
   };
   return new webpack.BannerPlugin({
     banner: `// ==UserScript==
@@ -23,7 +23,7 @@ module.exports = (pkgJson) => {
 // @author      ${meta.author}
 // @match       *://*.baidu.com/*
 // @grant       GM_addStyle
-// @require     https://cdn.jsdelivr.net/combine/npm/@violentmonkey/dom@2,npm/@violentmonkey/ui@0.7
+// @require     https://cdn.jsdelivr.net/combine/npm/@violentmonkey/dom@2,npm/@violentmonkey/ui@0.7,npm/react@18.2.0,npm/react-dom@18.2.0
 // ==/UserScript==
     `,
     raw: true,
